@@ -242,7 +242,7 @@ function addItem() {
             numberOfMoves++;
             b.setField(b.algorithm.getNextMove(), "o");
             let t2 = performance.now();
-            console.log("Call to doSomething took " + (t2 - t1) + " milliseconds.")
+            //console.log("Call to doSomething took " + (t2 - t1) + " milliseconds.")
             timesAIMoves.push((t2 - t1));
         }
     }
