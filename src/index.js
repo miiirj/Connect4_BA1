@@ -230,7 +230,7 @@ class Board {
 
 let b = new Board();
 
-checkCookie();
+//checkCookie();
 
 let gameOver = false;
 let timesAIMoves = [];
@@ -278,7 +278,7 @@ function getPossibleMoves(node) {
     return moveArray;
 }
 
-function checkCookie() {
+/* function checkCookie() {
     var session = getCookie("sessionkey");
     if ((session == "")) {
         let rndnumber = Math.floor(Math.random() * 1000);
@@ -307,4 +307,4 @@ function getCookie(cname) {
         }
     }
     return "";
-}
+} */
