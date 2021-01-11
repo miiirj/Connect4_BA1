@@ -88,13 +88,24 @@ class Board {
             gameOver = true;
         }
 
-        if (this.player >= 42) {
+        if (this.noMoreMoves(this.playBoard)) {
             //console.log("Unentschieden");
             this.showGameFinishedMessage("DRAW");
             gameOver = true;
         }
         return false;
     }
+
+    noMoreMoves(currentNode) {	
+        for (let i = 0; i < currentNode.length; i++) {	
+            for (let j = 0; j < currentNode[i].length; j++) {	
+                if (currentNode[i][j] === 0) {	
+                    return false;	
+                }	
+            }	
+        }	
+        return true;	
+    }	
 
     showGameFinishedMessage(finalMessage) {
         let winnerField = document.getElementById("boardAligner");
