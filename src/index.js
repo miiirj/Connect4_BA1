@@ -138,7 +138,6 @@ class Board {
             board: this.playBoard.toString(),
             numberOfMoves: numberOfMoves,
             aiMovesTime: timesAIMoves.toString(),
-            sessioncookie: getCookie("sessionkey").toString(),
         };
 
         var xhr = new XMLHttpRequest();
